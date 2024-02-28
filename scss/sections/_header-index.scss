@@ -6,7 +6,6 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
-
         a {
             img {
                 width: 200px;
@@ -22,18 +21,21 @@
             background-color: rgba(235, 212, 86, 0.404);
             width: 90%;
             justify-content: center;
-
             li {
-
                 margin: 10px;
-
                 a {
+                    font-family: $fuente-link;
                     text-decoration: none;
                     padding: 50px;
                     color: black;
                     display: inline-block;
                     margin: 0px;
                     padding: 0px;
+                    &:hover {
+                        text-decoration: underline;
+                        color: white;
+                        transition: .3s;
+                    }
 
 
                 }
@@ -50,19 +52,6 @@
         }
     }
 
-}
-
-.header {
-
-    ul {
-        li {
-            a:hover {
-                text-decoration: underline;
-                color: white;
-                transition: .3s;
-            }
-        }
-    }
 }
 
 

@@ -1,8 +1,19 @@
-.navbar-brand img {
-    width: 120px;
+.navbar-brand {
+    img {
+        width: 120px;
+    }
+
 }
 
-.navbar ul li :hover {
-    text-decoration: underline;
-    transition: .3s;
+.navbar {
+    ul {
+        li {
+            a {
+                &:hover {
+                    text-decoration: underline;
+                    transition: .3s;
+                }
+            }
+        }
+    }
 }
