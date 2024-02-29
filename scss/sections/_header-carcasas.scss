@@ -9,6 +9,8 @@
     ul {
         li {
             a {
+               font-family: $fuente-link; 
+               margin: 20px;
                 &:hover {
                     text-decoration: underline;
                     transition: .3s;
