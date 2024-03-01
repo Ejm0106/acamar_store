@@ -100,25 +100,30 @@
   grid-template-rows: 1fr 1fr;
   margin: 14px;
   gap: 5px;
-  grid-template-areas: "grid_pop grid_case grid_bat" "grid_pop grid_lam grid_lam"; }
+  grid-template-areas: "grid_pop grid_case grid_bat"
+ "grid_pop grid_lam grid_lam"; }
   .main_section .grid_banner img {
     width: 100%; }
   .main_section .grid_banner .grid_pop {
     grid-area: grid_pop;
     width: 33vw;
-    border: solid grey 2px; }
+    border: solid grey 2px; 
+  background-image: url(../resources/banner_pop.jpg);}
   .main_section .grid_banner .grid_case {
     grid-area: grid_case;
     width: 30vw;
-    border: solid grey 2px; }
+    border: solid grey 2px;
+    background-image: url(../resources/anner_cases_flipcovers.jpg); }
   .main_section .grid_banner .grid_bat {
     grid-area: grid_bat;
     width: 30vw;
-    border: solid grey 2px; }
+    border: solid grey 2px; 
+    background-image: url(../resources/banner_baterias.jpg); }
   .main_section .grid_banner .grid_lam {
     grid-area: grid_lam;
     width: 62vw;
-    border: solid grey 2px; }
+    border: solid grey 2px; 
+    background-image: url(../resources/banner_laminas.jpg); }
 
 @media (max-width: 600px) {
   .main_section section img {
