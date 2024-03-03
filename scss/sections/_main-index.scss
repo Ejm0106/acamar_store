@@ -1,23 +1,75 @@
 .main_section {
     section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        
 
         article {
             display: flex;
             flex-direction: column;
             align-items: center;
+
             a {
                 img {
-                    height: 200px;
+                    height: 300px;
                 }
             }
 
             h3 {
-               height: 30px;
+                height: 30px;
+                font-size: 15px;
+                margin: 0px;
+            }
+
+            span{
+                font-size: 15px;
+                margin: 0px
+            }
+
+            button{
+                margin: 5px;
             }
         }
+
+        .img_car_1 {
+            border: solid grey 1px;
+            background-size: cover;
+            width: 30%;
+        }
+
+        .img_car_2 {
+            border: solid grey 1px;
+            background-size: cover;
+            width: 30%;
+        }
+
+        .img_car_3 {
+            border: solid grey 1px;
+            background-size: cover;
+            width: 30%;
+        }
+
+        .img_car_4 {
+            border: solid grey 1px;
+            background-size: cover;
+            width: 30%;
+        }
+
+        .img_car_5 {
+            border: solid grey 1px;
+            background-size: cover;
+            width: 30%;
+        }
+
+        .img_car_6 {
+            border: solid grey 1px;
+            background-size: cover;
+            width: 30%;
+        }
+
     }
 
     h2 {
@@ -49,25 +101,25 @@
         .grid_pop {
             grid-area: grid_pop;
             width: 33vw;
-            border: solid grey 2px;
+            background-image: url("../resources/banner_pop.jpg")
         }
 
         .grid_case {
             grid-area: grid_case;
             width: 30vw;
-            border: solid grey 2px;
+            background-image: url("../resources/anner_cases_flipcovers.jpg")
         }
 
         .grid_bat {
             grid-area: grid_bat;
-            width: 30vw;
-            border: solid grey 2px;
+            width: 30.3vw;
+            background-image: url("../resources/banner_baterias.jpg")
         }
 
         .grid_lam {
             grid-area: grid_lam;
             width: 62vw;
-            border: solid grey 2px;
+            background-image: url("../resources/banner_laminas.jpg");
         }
 
     }
