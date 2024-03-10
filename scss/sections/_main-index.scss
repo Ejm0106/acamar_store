@@ -1,16 +1,37 @@
 .main_section {
+    .banner_1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .banner_2 {
+        display: none;
+    }
+
+    h1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     section {
         display: flex;
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
-        justify-content: center;
-        
+        justify-content: space-between;
+        padding: 5px;
 
         article {
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow: hidden;
 
             a {
                 img {
@@ -24,63 +45,65 @@
                 margin: 0px;
             }
 
-            span{
+            span {
                 font-size: 15px;
                 margin: 0px
             }
 
-            button{
+            button {
                 margin: 5px;
             }
         }
 
         .img_car_1 {
-            border: solid grey 1px;
-            background-size: cover;
-            width: 30%;
+            border: solid 1px $gris;
+            width: 25%;
         }
 
         .img_car_2 {
-            border: solid grey 1px;
-            background-size: cover;
-            width: 30%;
+            border: solid 1px $gris;
+            width: 25%;
         }
 
         .img_car_3 {
-            border: solid grey 1px;
-            background-size: cover;
-            width: 30%;
+            border: solid 1px $gris;
+            width: 25%;
         }
 
         .img_car_4 {
-            border: solid grey 1px;
-            background-size: cover;
-            width: 30%;
+            border: solid 1px $gris;
+            width: 25%;
         }
 
         .img_car_5 {
-            border: solid grey 1px;
-            background-size: cover;
-            width: 30%;
+            border: solid 1px $gris;
+            width: 25%;
         }
 
         .img_car_6 {
-            border: solid grey 1px;
-            background-size: cover;
-            width: 30%;
+            border: solid 1px $gris;
+            width: 25%;
+        }
+
+        .img_car_7 {
+            border: solid 1px $gris;
+            width: 25%;
+        }
+
+        .img_car_8 {
+            border: solid 1px $gris;
+            width: 25%;
         }
 
     }
 
     h2 {
-        box-shadow: 0px 1px 4px 9px rgba(63, 59, 36, 0.644);
-        margin-left: 30px;
-        margin-bottom: 30px;
-        margin-right: 30px;
+        box-shadow: 0px 1px 4px 9px $sombra;
         padding: 10px;
         display: flex;
         justify-content: space-evenly;
-        font-family: $fuente-link;
+        width: 98%;
+        margin-left: 5px;
 
     }
 
@@ -90,6 +113,7 @@
         grid-template-rows: 1fr 1fr;
         margin: 14px;
         gap: 5px;
+        background-position: center;
         grid-template-areas:
             "grid_pop grid_case grid_bat"
             "grid_pop grid_lam grid_lam";
@@ -101,19 +125,19 @@
         .grid_pop {
             grid-area: grid_pop;
             width: 33vw;
-            background-image: url("../resources/banner_pop.jpg")
+            background-image: url("../resources/banner_pop.jpg");
         }
 
         .grid_case {
             grid-area: grid_case;
             width: 30vw;
-            background-image: url("../resources/anner_cases_flipcovers.jpg")
+            background-image: url("../resources/anner_cases_flipcovers.jpg");
         }
 
         .grid_bat {
             grid-area: grid_bat;
             width: 30.3vw;
-            background-image: url("../resources/banner_baterias.jpg")
+            background-image: url("../resources/banner_baterias.jpg");
         }
 
         .grid_lam {
@@ -126,34 +150,109 @@
 
 }
 
-
-
-
-
-
 @media(max-width: 600px) {
 
+
     .main_section {
-        section {
-            img {
-                height: 300px;
-                display: flex;
-            }
+
+        .banner_1 {
+            display: none;
         }
 
-        h2 {
-            margin: 10px;
-            font-size: 20px;
+        .banner_2 {
+            display: flex;
+            width: 100%;
+            justify-content: center;
         }
 
+        h1 {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding-left: 70px;
+        }
 
         .grid_banner {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             align-items: center;
-            max-width: auto;
+
+
+            .grid_pop {
+                display: none;
+            }
+
+            .grid_case {
+                grid-area: grid_case;
+                width: 100%;
+            }
+
+            .grid_bat {
+                grid-area: grid_bat;
+                width: 100%;
+            }
+
+            .grid_lam {
+                grid-area: grid_lam;
+                width: 100%;
+            }
         }
 
+        h2 {
+            margin: 10px;
+            font-size: 20px;
+            width: 97%;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .img_car_1 {
+                border: solid 1px $gris;
+                width: 70%;
+            }
+
+            .img_car_2 {
+                border: solid 1px $gris;
+                width: 70%;
+            }
+
+            .img_car_3 {
+                border: solid 1px $gris;
+                width: 70%;
+            }
+
+            .img_car_4 {
+                border: solid 1px $gris;
+                width: 70%;
+            }
+
+            .img_car_5 {
+                border: solid 1px $gris;
+                width: 70%;
+            }
+
+            .img_car_6 {
+                border: solid 1px $gris;
+                width: 70%;
+            }
+
+            .img_car_7 {
+                border: solid 1px $gris;
+                width: 70%;
+            }
+
+            .img_car_8 {
+                border: solid 1px $gris;
+                width: 70%;
+                margin: 0px;
+            }
+        }
     }
+
+
 }
