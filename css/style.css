@@ -65,7 +65,8 @@
   flex-wrap: wrap;
   justify-content: center;
   background-image: radial-gradient(grey);
-  font-family: 'Rubik', sans-serif; }
+  font-family: 'Rubik', sans-serif;
+  box-shadow: 0px 1px 4px 9px #3f3b24a4; }
 
 .main_section section {
   display: flex;
