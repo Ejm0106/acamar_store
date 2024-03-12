@@ -6,6 +6,9 @@
 
         img {
             width: 100%;
+            &:hover {
+                animation: brillo 1s forwards;
+            }
         }
     }
 
@@ -17,6 +20,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        background-image: radial-gradient(grey);
+        font-family: 'Rubik', sans-serif;
     }
 
     section {
@@ -58,41 +63,65 @@
         .img_car_1 {
             border: solid 1px $gris;
             width: 25%;
+            &:hover {
+                animation: brillo 1s forwards;
+            }
         }
 
         .img_car_2 {
             border: solid 1px $gris;
             width: 25%;
+            &:hover {
+                animation: brillo 1s forwards;
+            }
         }
 
         .img_car_3 {
             border: solid 1px $gris;
             width: 25%;
+            &:hover {
+                animation: brillo 1s forwards;
+            }
         }
 
         .img_car_4 {
             border: solid 1px $gris;
             width: 25%;
+            &:hover {
+                animation: brillo 1s forwards;
+            }
         }
 
         .img_car_5 {
             border: solid 1px $gris;
             width: 25%;
+            &:hover {
+                animation: brillo 1s forwards;
+            }
         }
 
         .img_car_6 {
             border: solid 1px $gris;
             width: 25%;
+            &:hover {
+                animation: brillo 1s forwards;
+            }
         }
 
         .img_car_7 {
             border: solid 1px $gris;
             width: 25%;
+            &:hover {
+                animation: brillo 1s forwards;
+            }
         }
 
         .img_car_8 {
             border: solid 1px $gris;
             width: 25%;
+            &:hover {
+                animation: brillo 1s forwards;
+            }
         }
 
     }
@@ -126,24 +155,36 @@
             grid-area: grid_pop;
             width: 33vw;
             background-image: url("../resources/banner_pop.jpg");
+            &:hover {
+                animation: brillo 2s forwards;
+            }
         }
 
         .grid_case {
             grid-area: grid_case;
             width: 30vw;
             background-image: url("../resources/anner_cases_flipcovers.jpg");
+            &:hover {
+                animation: brillo 2s forwards;
+            }
         }
 
         .grid_bat {
             grid-area: grid_bat;
             width: 30.3vw;
             background-image: url("../resources/banner_baterias.jpg");
+            &:hover {
+                animation: brillo 2s forwards;
+            }
         }
 
         .grid_lam {
             grid-area: grid_lam;
             width: 62vw;
             background-image: url("../resources/banner_laminas.jpg");
+            &:hover {
+                animation: brillo 2s forwards;
+            }
         }
 
     }
@@ -163,6 +204,9 @@
             display: flex;
             width: 100%;
             justify-content: center;
+            &:hover {
+                animation: brillo 2s forwards;
+            }
         }
 
         h1 {
@@ -187,16 +231,25 @@
             .grid_case {
                 grid-area: grid_case;
                 width: 100%;
+                &:hover {
+                    animation: brillo 2s infinite;
+                }
             }
 
             .grid_bat {
                 grid-area: grid_bat;
                 width: 100%;
+                &:hover {
+                    animation: brillo 2s infinite;
+                }
             }
 
             .grid_lam {
                 grid-area: grid_lam;
                 width: 100%;
+                &:hover {
+                    animation: brillo 2s infinite;
+                }
             }
         }
 

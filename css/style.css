@@ -18,12 +18,44 @@
   border-radius: 20px;
   border: 1px solid black; }
 
+@keyframes brillo {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flash {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flash-diagonal {
+  0% {
+    transform: translate(-100%, -100%);
+    opacity: 0; }
+  50% {
+    transform: translate(100%, 100%);
+    opacity: 1; }
+  100% {
+    transform: translate(-100%, -100%);
+    opacity: 0; } }
+
+.nav-item:hover {
+  animation: brillo 1s forwards; }
+
 .main_section .banner_1 {
   width: 100%;
   display: flex;
   justify-content: center; }
   .main_section .banner_1 img {
     width: 100%; }
+    .main_section .banner_1 img:hover {
+      animation: brillo 1s forwards; }
 
 .main_section .banner_2 {
   display: none; }
@@ -31,7 +63,9 @@
 .main_section h1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  background-image: radial-gradient(grey);
+  font-family: 'Rubik', sans-serif; }
 
 .main_section section {
   display: flex;
@@ -59,27 +93,43 @@
   .main_section section .img_car_1 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section section .img_car_1:hover {
+      animation: brillo 1s forwards; }
   .main_section section .img_car_2 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section section .img_car_2:hover {
+      animation: brillo 1s forwards; }
   .main_section section .img_car_3 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section section .img_car_3:hover {
+      animation: brillo 1s forwards; }
   .main_section section .img_car_4 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section section .img_car_4:hover {
+      animation: brillo 1s forwards; }
   .main_section section .img_car_5 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section section .img_car_5:hover {
+      animation: brillo 1s forwards; }
   .main_section section .img_car_6 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section section .img_car_6:hover {
+      animation: brillo 1s forwards; }
   .main_section section .img_car_7 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section section .img_car_7:hover {
+      animation: brillo 1s forwards; }
   .main_section section .img_car_8 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section section .img_car_8:hover {
+      animation: brillo 1s forwards; }
 
 .main_section h2 {
   box-shadow: 0px 1px 4px 9px #3f3b24a4;
@@ -103,18 +153,26 @@
     grid-area: grid_pop;
     width: 33vw;
     background-image: url("../resources/banner_pop.jpg"); }
+    .main_section .grid_banner .grid_pop:hover {
+      animation: brillo 2s forwards; }
   .main_section .grid_banner .grid_case {
     grid-area: grid_case;
     width: 30vw;
     background-image: url("../resources/anner_cases_flipcovers.jpg"); }
+    .main_section .grid_banner .grid_case:hover {
+      animation: brillo 2s forwards; }
   .main_section .grid_banner .grid_bat {
     grid-area: grid_bat;
     width: 30.3vw;
     background-image: url("../resources/banner_baterias.jpg"); }
+    .main_section .grid_banner .grid_bat:hover {
+      animation: brillo 2s forwards; }
   .main_section .grid_banner .grid_lam {
     grid-area: grid_lam;
     width: 62vw;
     background-image: url("../resources/banner_laminas.jpg"); }
+    .main_section .grid_banner .grid_lam:hover {
+      animation: brillo 2s forwards; }
 
 @media (max-width: 600px) {
   .main_section .banner_1 {
@@ -123,6 +181,8 @@
     display: flex;
     width: 100%;
     justify-content: center; }
+    .main_section .banner_2:hover {
+      animation: brillo 2s forwards; }
   .main_section h1 {
     display: flex;
     width: 100%;
@@ -139,12 +199,18 @@
     .main_section .grid_banner .grid_case {
       grid-area: grid_case;
       width: 100%; }
+      .main_section .grid_banner .grid_case:hover {
+        animation: brillo 2s infinite; }
     .main_section .grid_banner .grid_bat {
       grid-area: grid_bat;
       width: 100%; }
+      .main_section .grid_banner .grid_bat:hover {
+        animation: brillo 2s infinite; }
     .main_section .grid_banner .grid_lam {
       grid-area: grid_lam;
       width: 100%; }
+      .main_section .grid_banner .grid_lam:hover {
+        animation: brillo 2s infinite; }
   .main_section h2 {
     margin: 10px;
     font-size: 20px;
@@ -192,8 +258,7 @@ footer {
   .navbar ul li a:hover {
     text-decoration: underline;
     transition: .3s;
-    lighting-color: #badada;
-    width: 100px; }
+    lighting-color: #badada; }
 
 .main_section_ccs h1 {
   box-shadow: 0px 1px 4px 9px #3f3b24a4;
@@ -226,27 +291,43 @@ footer {
   .main_section_ccs section .img_ccs_1 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_ccs section .img_ccs_1:hover {
+      animation: brillo 1s forwards; }
   .main_section_ccs section .img_ccs_2 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_ccs section .img_ccs_2:hover {
+      animation: brillo 1s forwards; }
   .main_section_ccs section .img_ccs_3 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_ccs section .img_ccs_3:hover {
+      animation: brillo 1s forwards; }
   .main_section_ccs section .img_ccs_4 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_ccs section .img_ccs_4:hover {
+      animation: brillo 1s forwards; }
   .main_section_ccs section .img_ccs_5 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_ccs section .img_ccs_5:hover {
+      animation: brillo 1s forwards; }
   .main_section_ccs section .img_ccs_6 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_ccs section .img_ccs_6:hover {
+      animation: brillo 1s forwards; }
   .main_section_ccs section .img_ccs_7 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_ccs section .img_ccs_7:hover {
+      animation: brillo 1s forwards; }
   .main_section_ccs section .img_ccs_8 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_ccs section .img_ccs_8:hover {
+      animation: brillo 1s forwards; }
 
 @media (max-width: 600px) {
   .main_section_ccs h1 {
@@ -261,28 +342,44 @@ footer {
     .main_section_ccs section .img_ccs_1 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_ccs section .img_ccs_1:hover {
+        animation: brillo 1s forwards; }
     .main_section_ccs section .img_ccs_2 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_ccs section .img_ccs_2:hover {
+        animation: brillo 1s forwards; }
     .main_section_ccs section .img_ccs_3 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_ccs section .img_ccs_3:hover {
+        animation: brillo 1s forwards; }
     .main_section_ccs section .img_ccs_4 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_ccs section .img_ccs_4:hover {
+        animation: brillo 1s forwards; }
     .main_section_ccs section .img_ccs_5 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_ccs section .img_ccs_5:hover {
+        animation: brillo 1s forwards; }
     .main_section_ccs section .img_ccs_6 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_ccs section .img_ccs_6:hover {
+        animation: brillo 1s forwards; }
     .main_section_ccs section .img_ccs_7 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_ccs section .img_ccs_7:hover {
+        animation: brillo 1s forwards; }
     .main_section_ccs section .img_ccs_8 {
       border: solid 1px #808080;
       width: 70%;
-      margin: 0px; } }
+      margin: 0px; }
+      .main_section_ccs section .img_ccs_8:hover {
+        animation: brillo 1s forwards; } }
 
 .main_section_acce h1 {
   box-shadow: 0px 1px 4px 9px #3f3b24a4;
@@ -315,27 +412,43 @@ footer {
   .main_section_acce section .img_acce_1 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_acce section .img_acce_1:hover {
+      animation: brillo 1s forwards; }
   .main_section_acce section .img_acce_2 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_acce section .img_acce_2:hover {
+      animation: brillo 1s forwards; }
   .main_section_acce section .img_acce_3 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_acce section .img_acce_3:hover {
+      animation: brillo 1s forwards; }
   .main_section_acce section .img_acce_4 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_acce section .img_acce_4:hover {
+      animation: brillo 1s forwards; }
   .main_section_acce section .img_acce_5 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_acce section .img_acce_5:hover {
+      animation: brillo 1s forwards; }
   .main_section_acce section .img_acce_6 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_acce section .img_acce_6:hover {
+      animation: brillo 1s forwards; }
   .main_section_acce section .img_acce_7 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_acce section .img_acce_7:hover {
+      animation: brillo 1s forwards; }
   .main_section_acce section .img_acce_8 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_acce section .img_acce_8:hover {
+      animation: brillo 1s forwards; }
 
 @media (max-width: 600px) {
   .main_section_acce h1 {
@@ -350,28 +463,44 @@ footer {
     .main_section_acce section .img_acce_1 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_acce section .img_acce_1:hover {
+        animation: brillo 1s forwards; }
     .main_section_acce section .img_acce_2 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_acce section .img_acce_2:hover {
+        animation: brillo 1s forwards; }
     .main_section_acce section .img_acce_3 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_acce section .img_acce_3:hover {
+        animation: brillo 1s forwards; }
     .main_section_acce section .img_acce_4 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_acce section .img_acce_4:hover {
+        animation: brillo 1s forwards; }
     .main_section_acce section .img_acce_5 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_acce section .img_acce_5:hover {
+        animation: brillo 1s forwards; }
     .main_section_acce section .img_acce_6 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_acce section .img_acce_6:hover {
+        animation: brillo 1s forwards; }
     .main_section_acce section .img_acce_7 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_acce section .img_acce_7:hover {
+        animation: brillo 1s forwards; }
     .main_section_acce section .img_acce_8 {
       border: solid 1px #808080;
       width: 70%;
-      margin: 0px; } }
+      margin: 0px; }
+      .main_section_acce section .img_acce_8:hover {
+        animation: brillo 1s forwards; } }
 
 .main_section_contacto section {
   display: flex;
@@ -426,27 +555,43 @@ footer {
   .main_section_elec section .img_elec_1 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_elec section .img_elec_1:hover {
+      animation: brillo 1s forwards; }
   .main_section_elec section .img_elec_2 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_elec section .img_elec_2:hover {
+      animation: brillo 1s forwards; }
   .main_section_elec section .img_elec_3 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_elec section .img_elec_3:hover {
+      animation: brillo 1s forwards; }
   .main_section_elec section .img_elec_4 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_elec section .img_elec_4:hover {
+      animation: brillo 1s forwards; }
   .main_section_elec section .img_elec_5 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_elec section .img_elec_5:hover {
+      animation: brillo 1s forwards; }
   .main_section_elec section .img_elec_6 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_elec section .img_elec_6:hover {
+      animation: brillo 1s forwards; }
   .main_section_elec section .img_elec_7 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_elec section .img_elec_7:hover {
+      animation: brillo 1s forwards; }
   .main_section_elec section .img_elec_8 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_elec section .img_elec_8:hover {
+      animation: brillo 1s forwards; }
 
 @media (max-width: 600px) {
   .main_section_elec h1 {
@@ -461,28 +606,44 @@ footer {
     .main_section_elec section .img_elec_1 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_elec section .img_elec_1:hover {
+        animation: brillo 1s forwards; }
     .main_section_elec section .img_elec_2 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_elec section .img_elec_2:hover {
+        animation: brillo 1s forwards; }
     .main_section_elec section .img_elec_3 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_elec section .img_elec_3:hover {
+        animation: brillo 1s forwards; }
     .main_section_elec section .img_elec_4 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_elec section .img_elec_4:hover {
+        animation: brillo 1s forwards; }
     .main_section_elec section .img_elec_5 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_elec section .img_elec_5:hover {
+        animation: brillo 1s forwards; }
     .main_section_elec section .img_elec_6 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_elec section .img_elec_6:hover {
+        animation: brillo 1s forwards; }
     .main_section_elec section .img_elec_7 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_elec section .img_elec_7:hover {
+        animation: brillo 1s forwards; }
     .main_section_elec section .img_elec_8 {
       border: solid 1px #808080;
       width: 70%;
-      margin: 0px; } }
+      margin: 0px; }
+      .main_section_elec section .img_elec_8:hover {
+        animation: brillo 1s forwards; } }
 
 .main_section_lam h1 {
   box-shadow: 0px 1px 4px 9px #3f3b24a4;
@@ -515,27 +676,43 @@ footer {
   .main_section_lam section .img_lam_1 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_lam section .img_lam_1:hover {
+      animation: brillo 1s forwards; }
   .main_section_lam section .img_lam_2 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_lam section .img_lam_2:hover {
+      animation: brillo 1s forwards; }
   .main_section_lam section .img_lam_3 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_lam section .img_lam_3:hover {
+      animation: brillo 1s forwards; }
   .main_section_lam section .img_lam_4 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_lam section .img_lam_4:hover {
+      animation: brillo 1s forwards; }
   .main_section_lam section .img_lam_5 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_lam section .img_lam_5:hover {
+      animation: brillo 1s forwards; }
   .main_section_lam section .img_lam_6 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_lam section .img_lam_6:hover {
+      animation: brillo 1s forwards; }
   .main_section_lam section .img_lam_7 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_lam section .img_lam_7:hover {
+      animation: brillo 1s forwards; }
   .main_section_lam section .img_lam_8 {
     border: solid 1px #808080;
     width: 25%; }
+    .main_section_lam section .img_lam_8:hover {
+      animation: brillo 1s forwards; }
 
 @media (max-width: 600px) {
   .main_section_lam h1 {
@@ -550,25 +727,41 @@ footer {
     .main_section_lam section .img_lam_1 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_lam section .img_lam_1:hover {
+        animation: brillo 1s forwards; }
     .main_section_lam section .img_lam_2 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_lam section .img_lam_2:hover {
+        animation: brillo 1s forwards; }
     .main_section_lam section .img_lam_3 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_lam section .img_lam_3:hover {
+        animation: brillo 1s forwards; }
     .main_section_lam section .img_lam_4 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_lam section .img_lam_4:hover {
+        animation: brillo 1s forwards; }
     .main_section_lam section .img_lam_5 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_lam section .img_lam_5:hover {
+        animation: brillo 1s forwards; }
     .main_section_lam section .img_lam_6 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_lam section .img_lam_6:hover {
+        animation: brillo 1s forwards; }
     .main_section_lam section .img_lam_7 {
       border: solid 1px #808080;
       width: 70%; }
+      .main_section_lam section .img_lam_7:hover {
+        animation: brillo 1s forwards; }
     .main_section_lam section .img_lam_8 {
       border: solid 1px #808080;
       width: 70%;
-      margin: 0px; } }
+      margin: 0px; }
+      .main_section_lam section .img_lam_8:hover {
+        animation: brillo 1s forwards; } }
